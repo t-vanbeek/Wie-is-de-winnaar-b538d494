@@ -38,13 +38,13 @@ session_start();
             $input = false;
         }
     } else
-        echo "";
+        echo "Speler 1 heeft een keuze gemaakt";
     ?>
     <h3>Speler 2</h3>
     <?php
     $p2 = false;
     if ($input === false) {
-        echo ("<form id='p2' action='spel.php' method='POST'>
+        echo ("<form id='p2' method='POST'>
         <input type='radio' name='RPS2' value='Steen'>Steen<br>
         <input type='radio' name='RPS2' value='Papier'>Papier<br>
         <input type='radio' name='RPS2' value='Schaar'>Schaar<br>
